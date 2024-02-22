@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const ExperienceSection = ({ darkMode, toggleDarkMode }) => {
+const ExperienceSection = () => {
   const experiences = [
     // Experience data
     {
