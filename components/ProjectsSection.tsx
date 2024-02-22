@@ -100,8 +100,8 @@ const projects = [
     name: "S&P 500 Stock Predictor",
     description: "The S&P 500 Stock Predictor trains machine learning models to forecast stock price trends for companies listed on the S&P 500 index. The project utilized historical stock data from the year 2000 to 2020 for various tickers within the S&P 500. ",
     image: "/Stock_Predictor.avif",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    github: "https://github.com/SyedAlhusain/Stock-Price-Prediction-Machine-Learning-Models/tree/main",
+    link: "https://github.com/SyedAlhusain/Stock-Price-Prediction-Machine-Learning-Models/tree/main",
   },
 
 ]
