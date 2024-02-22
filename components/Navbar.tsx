@@ -1,4 +1,3 @@
-"use client" // this is a client component
 import React from "react"
 import { useState } from "react"
 import { Link } from "react-scroll/modules"
@@ -16,6 +15,10 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
     page: "home",
+  },
+  {
+    label: "Experience",
+    page: "experience",
   },
   {
     label: "About",
@@ -39,7 +42,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
+                <h2 className="text-2xl font-bold">Syed Husain</h2>
               </div>
             </Link>
             <div className="md:hidden">
