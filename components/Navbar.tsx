@@ -16,21 +16,17 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
-    page: "/home",
-  },
-  {
-    label: "Experience",
-    page: "/experience",
+    page: "home",
   },
   {
     label: "About",
-    page: "/about",
+    page: "about",
   },
   {
     label: "Projects",
-    page: "/projects",
+    page: "projects",
   },
-];
+]
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
