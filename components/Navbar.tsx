@@ -2,6 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import Link from 'next/link';
+import { usePathname } from "next/navigation"
+import { useTheme } from "next-themes"
+import { RiMoonFill, RiSunLine } from "react-icons/ri"
+import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 interface NavItem {
   label: string;
