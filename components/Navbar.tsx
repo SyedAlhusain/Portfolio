@@ -1,16 +1,15 @@
 "use client" // this is a client component
-import React from "react";
-import { useState } from "react";
-import { useTheme } from "next-themes";
-import Link from 'next/link';
+import React from "react"
+import { useState } from "react"
+import { Link } from "react-scroll/modules"
 import { usePathname } from "next/navigation"
-// import { useTheme } from "next-themes"
+import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 interface NavItem {
-  label: string;
-  page: string;
+  label: string
+  page: string
 }
 
 const NAV_ITEMS: Array<NavItem> = [
@@ -29,20 +28,19 @@ const NAV_ITEMS: Array<NavItem> = [
 ]
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
-  const [navbar, setNavbar] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme()
+  const currentTheme = theme === "system" ? systemTheme : theme
+  const pathname = usePathname()
+  const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="/home">
-              <a>
-                <div className="container flex items-center space-x-2">
-                  <h2 className="text-2xl font-bold">Syed Husain</h2>
-                </div>
-              </a>
+            <Link to="home">
+              <div className="container flex items-center space-x-2">
+                <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
+              </div>
             </Link>
             <div className="md:hidden">
               <button
@@ -62,18 +60,25 @@ export default function Navbar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {NAV_ITEMS.map((item, idx) => (
-                <Link href={item.page} key={idx}>
-                  <a
+              {NAV_ITEMS.map((item, idx) => {
+                return (
+                  <Link
+                    key={idx}
+                    to={item.page}
                     className={
                       "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
                     }
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
-                  </a>
-                </Link>
-              ))}
+                  </Link>
+                )
+              })}
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
@@ -94,5 +99,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  );
+  )
 }
