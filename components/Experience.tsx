@@ -51,7 +51,7 @@ const ExperienceSection = () => {
           </div>
         ))}
         <div className="flex justify-center">
-          <a href="https://782b8ba1-e9c9-4458-a8c3-262498a2091d.filesusr.com/ugd/40204f_b80e597b6830450cae2c45c93fcc8230.pdf" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8">Download Resume</a>
+          <a href="https://0c904d67-f597-4bd7-9686-0e6cb225c34e.filesusr.com/ugd/40204f_a6356c289eec4b238c4cfdcee95ecbdc.pdf">Download Resume</a>
         </div>
       </div>
     </section>
