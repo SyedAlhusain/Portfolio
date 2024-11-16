@@ -54,12 +54,12 @@ const AboutSection = () => {
               Hi, my name is Syed Husain and I am a{" "}
               <span className="font-bold">{"enthusiastic"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> FileNet Developer
+              <span className="font-bold">{" driven"}</span> Machine Learning Researcher
               based in Jessup, MD.
             </p>
             <br />
             <p>
-              I am currently a Senior pursuing a Computer Science degree at UMBC, with a track in Data Science and AI/ML. I have substantial experience across programming languages including Python, C++, C, Java, JavaScript, Node.js, JavaFX, and x86 Assembly.
+              I have substantial experience across programming languages including Python, C++, C, Java, JavaScript, Node.js, JavaFX, and x86 Assembly.
             </p>
             <br />
             <p>
