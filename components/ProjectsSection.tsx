@@ -33,9 +33,7 @@ const projects = [
     image: "/Chat_Bot.webp",
     github: "https://github.com/SyedAlhusain/Stock-Trader-Chat-Bot",
     link: "https://syedhusain331.pythonanywhere.com/",
-  },  
-    
-
+  },   
 ]
 
 const ProjectsSection = () => {
