@@ -37,7 +37,9 @@ const ExperienceSection = () => {
         "Utilized Tableau to create insightful data visualizations to boost operational efficiency by a significant 40%",
       ],
     },
-  ];  return (
+  ];  
+  
+  return (
     <section id="experience">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center font-bold text-4xl">
