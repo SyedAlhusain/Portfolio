@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const ExperienceSection = () => {
   const experiences = [
-    // Experience data
     {
       company: "WSSC Water",
       location: "Laurel, Maryland",
@@ -26,8 +25,20 @@ const ExperienceSection = () => {
         "Utilized Tableau to create insightful data visualizations to boost operational efficiency by a significant 40%",
       ],
     },
+    {
+      company: "U.S. Army DEVCOM Army Research Laboratory",
+      location: "Aberdeen, Maryland",
+      position: "Machine Learning Researcher",
+      duration: "Jun 2024 – Present",
+      bullets: [
+        "Developed DRL algorithms using PyTorch for vibration control of TRAST model systems, achieving a 95% reduction in vibration amplitude",
+        "Enhanced algorithm robustness for aircraft whirl flutter suppression, resulting in a 90% improvement in control stability",
+        "Developed ML models to predict the TRAST model data at various velocity speed knots with 97% accuracy",
+        "Conducted simulations and performance assessments demonstrating a 95% increase in system-damping efficiency",
+      ],
+    },
   ];
-
+  
   return (
     <section id="experience">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
