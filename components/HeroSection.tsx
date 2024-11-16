@@ -20,9 +20,9 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
-             CS Student{" "}
+             Machine Learning Research{" "}
             </span>
-            at UMBC specializing in Data Science and AI/ML. I love using regression models to make predictions about cool things.
+            at ARL specializing in developing DRL controller models to stabilize aircraft.
           </p>
           {/* No Link component here */}
         </div>
